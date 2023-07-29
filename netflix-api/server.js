@@ -13,6 +13,9 @@ app.use(cors(
 ));
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+  res.json("Hello");
+})
 mongoose
   .connect("mongodb+srv://Shrey:9569941857@cluster0.pysbujr.mongodb.net/netflix?retryWrites=true&w=majority", {
     useNewUrlParser: true,
