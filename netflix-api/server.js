@@ -18,16 +18,18 @@ app.get("/",(req,res)=>{
   res.json("Hello");
 });
 mongoose
-  .connect("mongodb+srv://Shrey:9569941857@cluster0.pysbujr.mongodb.net/netflix?retryWrites=true&w=majority", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("DB Connected");
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+  .connect("mongodb+srv://Shrey:9569941857@cluster0.pysbujr.mongodb.net/netflix?retryWrites=true&w=majority");
+           // , {
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
+  // }
+          
+  // .then(() => {
+  //   console.log("DB Connected");
+  // })
+  // .catch((err) => {
+  //   console.log(err.message);
+  // });
 
 app.use("/api/user",userRoutes);
 
