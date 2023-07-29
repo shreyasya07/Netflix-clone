@@ -14,7 +14,7 @@ app.use(cors(
 app.use(express.json());
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/netflix", {
+  .connect("mongodb+srv://Shrey:9569941857@cluster0.pysbujr.mongodb.net/netflix?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
